@@ -16,6 +16,7 @@ h1 {
 
 .wrapper {
   text-align: center;
+  
 }
 
 
@@ -32,7 +33,7 @@ h1 {
   text-align: center;
 }
 
-div:first-of-type {
+.wrapper div:first-of-type {
   animation-name: animacija1;
   animation-duration:5s;
   animation-iteration-count: infinite;
@@ -40,11 +41,11 @@ div:first-of-type {
 }
 @keyframes animacija1 {
   0% { transform: scale(1);
-  background: #f93;
+  background-color: #f93;
 }  
   100% { transform:scale(1.3);
     
-    background: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
    }
 }
 
@@ -83,16 +84,16 @@ div:nth-of-type(3) {
 
 @keyframes animacija4 {
   0%{
-  transform:translateY(-7px);
+  transform:translateY(-10px);
 }
 
 100% {
-  transform: translateY(14px);
+  transform: translateY(10px);
 }
 }
 div:nth-of-type(4) {
   animation-name: animacija4;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -102,14 +103,14 @@ div:nth-of-type(4) {
     transform:translateY(0) rotate(0deg);
   }
   25%{
-    transform:translateY(350px) rotate(0deg); 
+    transform:translateY(370px) rotate(0deg); 
   }
   50% {
-    transform:translateY(350px)rotate(360deg);
+    transform:translateY(370px)rotate(360deg);
    background-color: rgb(255, 0, 0);  
   }
    75% {
-    transform:translateY(350px) rotate(0deg);
+    transform:translateY(370px) rotate(0deg);
     background-color: #f93;
    }
  
